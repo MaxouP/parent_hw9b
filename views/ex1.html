@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent's Exercice 4</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <h2>Sample Form</h2>
+  <form>
+    <p>
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput" name="nameInput" value="">
+    </p>
+    <p>
+      <label for="emailInput">Email:</label>
+      <input type="text" id="emailInput" name="emailInput" value="">
+    </p>
+
+    <p>Payment Type:</p>
+    <div class="paymentTypeList">
+      <div>
+        <input type="radio" id="cash" name="payment" value="cash" />
+        <label for="cash">Cash</label>
+      </div>
+      <div>
+        <input type="radio" id="creditCard" name="payment" value="creditCard" />
+        <label for="creditCard">Credit Card</label>
+      </div>
+      <div>
+        <input type="radio" id="googlePay" name="payment" value="gpay" />
+        <label for="googlePay">Google Pay</label>
+      </div>
+      <div>
+        <input type="radio" id="applePay" name="payment" value="apay" />
+        <label for="applePay">Apple Pay</label>
+      </div>
+      <p>
+        <input type="checkbox" id="promotion" name="promotion">Sign me up for special promotions</input>
+      </p>
+    </div>
+    <div>
+      <label for="location">Preferred location:</label>
+      <select name="location">
+        <option value="LA">Los Angeles</option>
+        <option value="OC">Orange County</option>
+        <option value="RS">Riverside</option>
+        <option value="SD">San Diego</option>
+      </select>
+    </div>
+
+    <p>
+      <button value="submit">Submit </button>
+      <input type="reset" value="Cancel">
+    </p>
+    <p id="confirmation"></p>
+  </form>
+
+  <script src="../public/ex1.js"></script>
+</body>
+
+</html>
